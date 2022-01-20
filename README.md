@@ -74,8 +74,6 @@ In order to encrypt your services using HTTPS, you need to generate a certificat
 
 Install [Certbot](https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx).
 
-Put the contents from [this file](https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/certbot_nginx/_internal/tls_configs/options-ssl-nginx.conf) into `/etc/letsencrypt/options-ssl-nginx.conf`.
-
 ### Generate certificates
 
 Stop the reverse proxy: `make stop`
