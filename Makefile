@@ -25,5 +25,4 @@ generate-certs:
 	fi;
 
 renew-certs:
-	docker-compose run --service-ports certbot renew \
-		--dry-run; \
+	docker-compose run --service-ports certbot renew
