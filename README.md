@@ -97,7 +97,7 @@ source venv/bin/activate
 Install requirements
 
 ```
-pip3 install -r requirements_dev
+pip3 install -r requirements_dev.txt
 ```
 
 Run the tests from project root
