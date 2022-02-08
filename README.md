@@ -95,10 +95,29 @@ If you'd like to automate the process of generating certificates, there are thre
  - Iterates the servers in servers.json, returns a non-zero exit status if any of the servers (with https: true) does not have fullchain.pem and privkey.pem files in the expected locations.
 
 **generate-certs**
- - Iterates the servers in servers.json, attempting to generate a certificate with certbot for any servers (with https: true) that does not have fullchain.pem and privkey.pem files in the expected locations.
+ - Iterates the servers in servers.json, attempting to generate a certificate with certbot for any servers (with https: true).
 
 **renew-certs**
  - Attempts to renew any certificates previously obtained with certbot.
+
+## Running tests
+
+```python
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Install requirements
+
+```
+pip3 install -r requirements_dev.txt
+```
+
+Run the tests from project root
+
+```
+python3 -m pytest tests
+```
 
 ## How to contribute
 Feel free to open a pull request! All contributions, no matter how small, are more than welcome. Happy hacking!

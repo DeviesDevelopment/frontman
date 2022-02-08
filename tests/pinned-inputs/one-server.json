@@ -1,0 +1,7 @@
+[
+    {
+        "server_name": "domain1.org",
+        "upstream_port": "8080",
+        "https": true
+    }
+]
