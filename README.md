@@ -87,7 +87,7 @@ The contents from `/etc/letsencrypt/` will be mounted into the Docker container.
 
 You need to repeat this process every 90 days unless you set up a cronjob to do it for you.
 
-## Running tests
+## Running unit tests
 
 ```python
 python3 -m venv venv
@@ -104,6 +104,13 @@ Run the tests from project root
 
 ```
 python3 -m pytest tests
+```
+
+## Running e2e tests
+
+```
+cd e2e
+./run-test.sh
 ```
 
 ## How to contribute
