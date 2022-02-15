@@ -1,0 +1,12 @@
+[
+    {
+        "server_name": "service-a.com",
+        "upstream_port": "1000",
+        "https": false
+    },
+    {
+        "server_name": "service-b.com",
+        "upstream_port": "2000",
+        "https": false
+    }
+]
