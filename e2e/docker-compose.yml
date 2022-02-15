@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+  a:
+    image: wiremock/wiremock
+    ports:
+      - 1000:8080
+    volumes:
+      - ./a:/home/wiremock
+  b:
+    image: wiremock/wiremock
+    ports:
+      - 2000:8080
+    volumes:
+      - ./b:/home/wiremock
