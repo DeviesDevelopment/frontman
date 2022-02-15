@@ -11,5 +11,5 @@ jobs:
 
       - name: Run e2e tests
         run: |
-          cd e2e
-          ./run-test.sh
+          cd e2e && ./run-test.sh
+          ls
