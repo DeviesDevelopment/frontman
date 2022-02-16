@@ -1,0 +1,15 @@
+name: e2e tests
+
+on: [pull_request]
+
+jobs:
+  e2e-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2
+
+      - name: Run e2e tests
+        run: |
+          cd e2e && ./run-test.sh
+
