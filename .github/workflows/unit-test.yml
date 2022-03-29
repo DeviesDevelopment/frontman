@@ -19,7 +19,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements_dev.txt
           python3 -m pytest tests --verbose
- 
+
       - name: Time reporter
-        uses: DeviesDevelopment/workflow-timer
+        uses: DeviesDevelopment/workflow-timer@master
 
