@@ -17,3 +17,6 @@ jobs:
         run: |
           cd e2e && ./run-test.sh
 
+      - name: Time reporter
+        uses: DeviesDevelopment/workflow-timer@v0.0.1
+
