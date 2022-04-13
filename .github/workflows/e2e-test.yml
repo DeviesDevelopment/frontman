@@ -18,5 +18,5 @@ jobs:
           cd e2e && ./run-test.sh
 
       - name: Time reporter
-        uses: DeviesDevelopment/workflow-timer@check-trigger-event
+        uses: DeviesDevelopment/workflow-timer@v0.0.2
 
