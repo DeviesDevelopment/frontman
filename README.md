@@ -100,9 +100,6 @@ If you'd like to automate the process of generating certificates, there are thre
 **renew-certs**
  - Attempts to renew any certificates previously obtained with certbot.
 
-## How to contribute
-Feel free to open a pull request! All contributions, no matter how small, are more than welcome. Happy hacking!
-
 ## Running unit tests
 
 ```python
@@ -128,3 +125,6 @@ python3 -m pytest tests
 cd e2e
 ./run-test.sh
 ```
+
+## How to contribute
+Feel free to open a pull request! All contributions, no matter how small, are more than welcome. Happy hacking!
