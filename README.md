@@ -87,6 +87,19 @@ The contents from `/etc/letsencrypt/` will be mounted into the Docker container.
 
 You need to repeat this process every 90 days unless you set up a cronjob to do it for you.
 
+### Automation of certificate generation
+
+If you'd like to automate the process of generating certificates, there are three additional targets in the [Makefile](./Makefile) that may help you.
+
+**validate-certs**
+ - Iterates the servers in servers.json, returns a non-zero exit status if any of the servers (with https: true) does not have fullchain.pem and privkey.pem files in the expected locations.
+
+**generate-certs**
+ - Iterates the servers in servers.json, attempting to generate a certificate with certbot for any servers (with https: true) that does not have fullchain.pem and privkey.pem files in the expected locations.
+
+**renew-certs**
+ - Attempts to renew any certificates previously obtained with certbot.
+
 ## Running unit tests
 
 ```python
